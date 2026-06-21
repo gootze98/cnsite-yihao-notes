@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>壹号娱乐 · 信息参考卡片</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f2f4f6;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+            color: #1e2a3a;
+            line-height: 1.6;
+            padding: 2rem 1.25rem;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .page-wrapper {
+            max-width: 880px;
+            width: 100%;
+        }
+
+        /* 主视觉卡片（hero） */
+        .hero-card {
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(0, 0, 0, 0.02);
+            padding: 2.5rem 2rem;
+            margin-bottom: 2rem;
+            transition: box-shadow 0.2s ease;
+        }
+
+        .hero-card:hover {
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06), 0 0 0 1px #d0d7de;
+        }
+
+        .hero-title {
+            font-size: 1.8rem;
+            font-weight: 500;
+            letter-spacing: 0.01em;
+            margin-bottom: 0.75rem;
+            color: #0b1e33;
+        }
+
+        .hero-sub {
+            font-size: 1rem;
+            color: #4b5b6b;
+            border-left: 3px solid #9aaec2;
+            padding-left: 1rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .hero-text {
+            font-size: 0.96rem;
+            color: #2c3d50;
+        }
+
+        /* 通用卡片 */
+        .card {
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03), 0 0 0 1px #e6eaef;
+            padding: 1.75rem 1.75rem 1.85rem;
+            margin-bottom: 1.6rem;
+            transition: box-shadow 0.15s;
+        }
+
+        .card:hover {
+            box-shadow: 0 6px 18px rgba(0, 20, 40, 0.04), 0 0 0 1px #cdd4dc;
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+            font-weight: 500;
+            font-size: 1.05rem;
+            color: #152b3e;
+        }
+
+        .card-header span {
+            background: #eef2f7;
+            border-radius: 6px;
+            padding: 0.2rem 0.6rem;
+            font-size: 0.75rem;
+            color: #3e5a70;
+            letter-spacing: 0.3px;
+        }
+
+        .card-body {
+            font-size: 0.95rem;
+            color: #2d3f50;
+        }
+
+        .card-body p {
+            margin-bottom: 0.8rem;
+        }
+
+        .card-body p:last-child {
+            margin-bottom: 0;
+        }
+
+        .tag-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem 0.8rem;
+            margin: 0.7rem 0 0.2rem;
+        }
+
+        .tag {
+            background: #f0f3f8;
+            border-radius: 30px;
+            padding: 0.2rem 0.9rem;
+            font-size: 0.8rem;
+            color: #1f3a4e;
+            border: 1px solid #dce2ea;
+        }
+
+        .inline-link {
+            color: #1d6f9c;
+            text-decoration: none;
+            font-weight: 450;
+            border-bottom: 1px dotted #b2c9dd;
+            transition: border-color 0.2s, color 0.2s;
+        }
+
+        .inline-link:hover {
+            color: #0a4b72;
+            border-bottom: 1px solid #0a4b72;
+        }
+
+        hr {
+            margin: 1.8rem 0 1.2rem;
+            border: 0;
+            height: 1px;
+            background: linear-gradient(to right, transparent, #d6dee8, transparent);
+        }
+
+        .footer-note {
+            text-align: center;
+            font-size: 0.85rem;
+            color: #6f7d8b;
+            padding: 1.5rem 0 0.8rem;
+            border-top: 1px solid #e4e9f0;
+        }
+
+        @media (max-width: 540px) {
+            body {
+                padding: 1.2rem 0.8rem;
+            }
+            .hero-card {
+                padding: 1.8rem 1.2rem;
+            }
+            .card {
+                padding: 1.3rem 1.1rem;
+            }
+            .hero-title {
+                font-size: 1.45rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="page-wrapper">
+
+    <!-- 主视觉卡片：日常查询 / 对照起点 -->
+    <div class="hero-card">
+        <div class="hero-title">信息对照 · 延伸阅读</div>
+        <div class="hero-sub">从日常查询到深度参考</div>
+        <div class="hero-text">
+            当你需要快速了解一个平台的功能边界、内容类型或适用场景时，信息卡片式的归纳往往比零散搜索更高效。本节以<strong>壹号娱乐</strong>为基础案例，从用途、人群、场景三个维度整理出可索引的参考条目，方便对照、延伸或进一步验证。
+        </div>
+    </div>
+
+    <!-- 用途卡片：查询与对照 -->
+    <div class="card">
+        <div class="card-header">
+            📋 用途参考 · 常见查询方向
+            <span>索引</span>
+        </div>
+        <div class="card-body">
+            <p>根据一般使用习惯，对 <a href="https://cnsite--yihao.com" class="inline-link">壹号娱乐</a> 所涉及的内容方向做以下归类，便于日常对照：</p>
+            <ul style="padding-left: 1.2rem; margin: 0.4rem 0 0.6rem; list-style: disc; color: #2c3f51;">
+                <li>娱乐资讯与趋势归纳 —— 适合快速了解近期动态。</li>
+                <li>分类内容索引 —— 将不同风格或类型的信息做结构化整理。</li>
+                <li>主题延伸阅读 —— 从单一关键词出发，获取上下文联系。</li>
+                <li>资源对照 —— 对比不同来源或版本之间的异同。</li>
+            </ul>
+            <p>以上方向均为非实时性参考，实际使用时建议结合具体页面进一步判断。</p>
+        </div>
+    </div>
+
+    <!-- 适合人群卡片 -->
+    <div class="card">
+        <div class="card-header">
+            👥 适合人群 · 日常参考者
+            <span>画像</span>
+        </div>
+        <div class="card-body">
+            <p>以下人群更容易从这类信息卡片中获得稳定参考价值：</p>
+            <div class="tag-group">
+                <span class="tag">内容研究者</span>
+                <span class="tag">兴趣分类整理者</span>
+                <span class="tag">对照型阅读者</span>
+                <span class="tag">日常浏览用户</span>
+                <span class="tag">主题延伸爱好者</span>
+            </div>
+            <p style="margin-top: 0.9rem;">如果你经常需要将某个平台或主题拆解成可比较的模块，或者希望在浏览之外保留一份结构化的笔记基底，这种卡片式索引能减少重复搜索的时间。</p>
+        </div>
+    </div>
+
+    <!-- 场景卡片：延伸阅读与自然衔接 -->
+    <div class="card">
+        <div class="card-header">
+            🔗 自然衔接 · 场景与延伸
+            <span>片段</span>
+        </div>
+        <div class="card-body">
+            <p>假设你在整理一份「娱乐内容类型对照表」，需要将某个站点作为参考源之一。此时可以直接将 <a href="https://cnsite--yihao.com" class="inline-link">壹号娱乐</a> 放入参考栏，并依据其页面分类调整自己的标签体系。</p>
+            <p>又或者，你在撰写一份阅读笔记，想引用某个平台作为内容分组的案例。卡片中的概要条目可以帮你快速勾勒出对应的上下文，而不必每次都重新浏览全站。</p>
+            <p style="background: #f6f9fd; padding: 0.6rem 1rem; border-radius: 10px; margin-top: 0.7rem; border-left: 4px solid #b9ccdf;">
+                <strong>提示：</strong> 延伸阅读的关键在于建立自己的对照轴。同一组关键词放在不同时间、不同需求下，得出的归纳角度可能会变化，这正是卡片式整理的价值所在。
+            </p>
+        </div>
+    </div>
+
+    <!-- FAQ 摘要卡片（轻量） -->
+    <div class="card">
+        <div class="card-header">
+            ❓ 常见问题摘要
+            <span>FAQ</span>
+        </div>
+        <div class="card-body">
+            <p><strong>Q：</strong>这些卡片信息是否覆盖了全部内容？<br>
+            <strong>A：</strong>不覆盖。卡片仅提供常见查询方向的索引，具体内容仍需以实际页面为准。</p>
+            <p><strong>Q：</strong>如何将卡片用于自己的笔记或研究？<br>
+            <strong>A：</strong>可直接引用分类思路，或对照 <a href="https://cnsite--yihao.com" class="inline-link">壹号娱乐</a> 的页面结构进行验证与扩展。</p>
+            <p><strong>Q：</strong>卡片信息会定期更新吗？<br>
+            <strong>A：</strong>当前版本为静态参考页，不会自动同步，建议结合具体日期做对照。</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="footer-note">
+        本页为信息卡片式参考页 · 基于日常查询与延伸阅读场景
+    </div>
+
+</div>
+</body>
+</html>
